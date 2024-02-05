@@ -1,0 +1,18 @@
+{
+  "name": "examples",
+  "version": "0.1.0",
+  "description": "## How to use",
+  "main": "config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "link:lib": "npm link @Ramestt-Blockchain/ramajs"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@ramestta/ramajs": "^0.1.0",
+    "@ramestta/rama-web3": "^0.1.0",
+    "@truffle/hdwallet-provider": "^1.5.1-alpha.1",
+    "dotenv": "^10.0.0"
+  }
+}
