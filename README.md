@@ -3,7 +3,7 @@
 
 This repository contains the `ramajs` client library. `ramajs` makes it easy for developers, who may not be deeply familiar with smart contract development, to interact with the various components of Ramestta Network.
 
-This library will help developers to move assets from Ethereum chain to ramestta chain, and withdraw from ramestta to Ethereum using fraud proofs.
+This library will help developers to move assets from Polygon chain to Ramestta chain, and withdraw from Ramestta to Polgon using fraud proofs.
 
 
 
