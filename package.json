@@ -2,6 +2,9 @@
   "name": "@ramestta/ramajs",
   "version": "0.1.0",
   "description": "Javascript developer library for interacting with Ramestta Network",
+  "publishConfig": {
+    "access": "public"
+  },
   "main": "dist/npm.export.js",
   "types": "dist/ts/index.d.ts",
   "browser": "dist/rama.umd.js",
