@@ -1,6 +1,6 @@
 {
   "name": "@ramestta/ramajs",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Javascript developer library for interacting with Ramestta Network",
   "publishConfig": {
     "access": "public"
