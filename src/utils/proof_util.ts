@@ -85,9 +85,9 @@ export class ProofUtil {
         return reversedProof.reverse();
     }
 
-    static buildBlockProof(ramaWeb3: BaseWeb3Client, startBlock: number, endBlock: number, blockNumber: number) {
+    static buildBlockProof(maticWeb3: BaseWeb3Client, startBlock: number, endBlock: number, blockNumber: number) {
         return ProofUtil.getFastMerkleProof(
-            ramaWeb3, blockNumber, startBlock, endBlock
+            maticWeb3, blockNumber, startBlock, endBlock
         ).then(proof => {
             return bufferToHex(
                 Buffer.concat(

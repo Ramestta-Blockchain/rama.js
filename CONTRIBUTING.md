@@ -1,4 +1,4 @@
-# Contributing to matic.js
+# Contributing to rama.js
 
 1. [Clone](https://help.github.com/articles/cloning-a-repository/) this repository to your local machine.
 2. Checkout new branch to start development `git checkout -b <branch-name>`.
