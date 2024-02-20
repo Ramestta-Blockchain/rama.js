@@ -12,9 +12,9 @@ const to = user2.address;
 
 const execute = async () => {
   // return console.log(
-  //   Converter.toHex('matic-bor-receipt-'),
-  //   Buffer.from('matic-bor-receipt-', 'utf-8'),
-  //   toBuffer(Converter.toHex('matic-bor-receipt-'))
+  //   Converter.toHex('rama-bor-receipt-'),
+  //   Buffer.from('rama-bor-receipt-', 'utf-8'),
+  //   toBuffer(Converter.toHex('rama-bor-receipt-'))
   // )
 
 

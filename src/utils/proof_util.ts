@@ -85,9 +85,9 @@ export class ProofUtil {
         return reversedProof.reverse();
     }
 
-    static buildBlockProof(maticWeb3: BaseWeb3Client, startBlock: number, endBlock: number, blockNumber: number) {
+    static buildBlockProof(ramaWeb3: BaseWeb3Client, startBlock: number, endBlock: number, blockNumber: number) {
         return ProofUtil.getFastMerkleProof(
-            maticWeb3, blockNumber, startBlock, endBlock
+            ramaWeb3, blockNumber, startBlock, endBlock
         ).then(proof => {
             return bufferToHex(
                 Buffer.concat(
@@ -181,12 +181,12 @@ export class ProofUtil {
     // So, while calculating proof, we have to exclude them.
     //
     // This is derived from block's hash and number
-    // state-sync tx hash = keccak256("matic-bor-receipt-" + block.number + block.hash)
+    // state-sync tx hash = keccak256("rama-bor-receipt-" + block.number + block.hash)
     static getStateSyncTxHash(block): Buffer {
         return keccak256(
             Buffer.concat([
                 // prefix for bor receipt
-                Buffer.from('matic-bor-receipt-', 'utf-8'),
+                Buffer.from('rama-bor-receipt-', 'utf-8'),
                 setLengthLeft(toBuffer(block.number), 8), // 8 bytes of block number (BigEndian)
                 toBuffer(block.hash), // block hash
             ])

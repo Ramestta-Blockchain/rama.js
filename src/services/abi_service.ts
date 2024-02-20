@@ -8,7 +8,7 @@ export class ABIService {
     }
 
     getABI(network: string, version: string, bridgeType: string, contractName: string) {
-        const url = `${network}/${version}/abis/${bridgeType}/${contractName}.json`;
+        const url = `${network}/${version}/artifacts/${bridgeType}/${contractName}.json`;
         return this.httpRequest.get(url).then((result: any) => {
             return result.abi;
         });
